@@ -1,0 +1,73 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[margin=.7in]{geometry}
+\usepackage{amsmath}
+\usepackage{cancel} 
+\usepackage{hyperref}
+\usepackage{arcs}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{stackrel}
+\usepackage{enumerate}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{ wasysym }
+\usepackage{tikz}
+\theoremstyle{defninition}
+\usepackage{amsthm,thmtools,xcolor}
+
+\newtheorem{thm}{قضیه}
+
+\declaretheoremstyle[
+headfont=\color{red}\normalfont\bfseries,
+bodyfont=\color{red}\normalfont,
+]{colored}
+\declaretheorem[
+style=colored,
+name=تمرین,
+]{tamrin}
+
+\newtheorem{mesal}[thm]{مثال}
+
+
+\newtheorem{soal}[thm]{سوال}
+\newtheorem{tav}[thm]{توجه}
+
+
+\newtheorem{tamrinetahvili}{تمرین تحویلی}
+\newtheorem{lem}[thm]{لم}
+
+\newtheorem{moshahedat}[thm]{مشاهدات}
+\newtheorem{moshahede}[thm]{مشاهده}
+\newtheorem{nokte}[thm]{نکته}
+\newtheorem{jambandi}{جمعبندی}
+\newtheorem{defn}[thm]{تعریف}
+
+\newtheorem{natije}[thm]{نتیجه}
+\newtheorem{moroor}[thm]{مرور درس‌}
+\newtheorem{yadavari}[thm]{یادآوری}
+\newtheorem{tamim}[thm]{تعمیم}
+\newtheorem{hadaf}[thm]{هدف}
+\newtheorem{xolase}[thm]{خلاصه}
+\newtheorem{namadgozari}[thm]{نمادگذاری}
+\newtheorem{proj}[thm]{پروژه}
+\usepackage{xepersian}
+\usepackage{verbatim}
+\settextfont{XB Niloofar}
+%\setlatintextfont{Arial}
+\setdigitfont{XB Niloofar}
+\linespread{1.5}
+\newcommand*{\TakeFourierOrnament}[1]{{%
+		\fontencoding{U}\fontfamily{futs}\selectfont\char#1}}
+\newcommand*{\danger}{\TakeFourierOrnament{66}}
+\newcommand{\tarc}{\mbox{\large$\frown$}}
+\newcommand{\arc}[1]{\stackrel{\tarc}{#1}}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+		\node[shape=circle,draw,inner sep=2pt] (char) {#1};}}
+
+\begin{document}
+اینجا بنویسید. لطفاً فرمولها را در خطهای متفاوت با متن بنویسید. مثلا فرض کنید که
+$x$
+یک متغیر باشد. آنگاه داریم
+\[x \leq y.\]
+\end{document}
